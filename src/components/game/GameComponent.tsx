@@ -48,6 +48,7 @@ export default function ChatComponent() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [password, setPassword] = useState("");
+  const [score, setScore] = useState(0);
   const [localConversation, setLocalConversation] = useState<string[]>([]);
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setError("");
@@ -94,6 +95,7 @@ export default function ChatComponent() {
     if (password.toLowerCase() === inputValue.toLowerCase()) {
       // correct guess!
       console.log('yay!')
+      setScore(score + 1);
       setLocalConversation([]);
     } else {
       setLocalConversation(prevLocalConversation => [...prevLocalConversation, inputValue]);
@@ -124,6 +126,7 @@ export default function ChatComponent() {
       ) : <div></div> }
       { !password || localConversation.length === 0 ? (
           <div>
+            <p>Score: {score}</p>
             <Button onClick={initializeGame}>Play game</Button>
           </div>
         ) :
