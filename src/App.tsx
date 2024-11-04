@@ -13,7 +13,7 @@ function App() {
           level={1}
           variation="primary"
         >
-          Cloud Password
+          Cloud Password Game
         </Heading>
         <View as="section">
           <Text
@@ -26,7 +26,7 @@ function App() {
             textDecoration="none"
             width="60vw"
           >
-            Guess the password based on the one-word clue. Passwords are based on cloud terminology and AWS concepts. Make sure to try the short or full service name, including the prefix, Amazon or AWS. Guesses are case-insentitive.
+            Test your cloud and AWS knowledge by guessing the password based on the one-word clue. Passwords are based on cloud terminology and AWS concepts. Make sure to try the short or full service name, including the prefix, Amazon or AWS. Guesses are case-insentitive.
           </Text>
           <Game />
         </View>
