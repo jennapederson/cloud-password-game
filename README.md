@@ -2,7 +2,7 @@
 
 A game to test your cloud and AWS knowledge by guessing the password based on the one-word clue.
 
-## Pre-reqs
+## Prerequisites
 
 - An AWS account. You can create your account [here](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
 - Request access to an AI model (we'll use Amazon Titan Text G1 - Premier) on Amazon Bedrock before you can use it. Learn about model access [here](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html).
